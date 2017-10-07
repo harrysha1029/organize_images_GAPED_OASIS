@@ -9,7 +9,6 @@ def organizeFolderGAPED(original, pos, neg, neut):
   files = os.listdir(original)
   for file in files:
       if '.txt' in file and 'SD' not in file and 'readme' not in file:
-          print(file)
           with open(os.path.join(original, file), 'r') as f:
               for l in f:
                   l = l.split()
